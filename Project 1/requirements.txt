@@ -1,0 +1,34 @@
+	Download Plotly with the link given below
+https://pypi.org/project/plotly/
+
+Download Statistics Module
+https://docs.python.org/3/library/statistics.html
+
+Download Datetime Module
+https://pypi.org/project/DateTime/
+
+Download Dataclasses Module
+https://pypi.org/project/dataclasses/
+
+Download Operator Module
+https://docs.python.org/3/library/operator.html
+
+Downlaod Typing Module
+https://pypi.org/project/typing/
+
+Download csv Module
+https://docs.python.org/3/library/csv.html
+
+Download all the dataset in the links given below
+
+http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aCO2
+(Download the UN data as a csv file)
+
+https://datacatalog.worldbank.org/dataset/gdp-ranking
+(For the world bank file, go to the data & resources and download the csv file, you need to right click and open in new tab for it to work)
+
+https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data?select=GlobalLandTemperaturesByCountry.csv
+
+https://www.kaggle.com/econdata/climate-change?select=climate\_change.csv
+
+https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data?select=GlobalTemperatures.csv

@@ -1,0 +1,78 @@
+\documentclass[fontsize=11pt]{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+
+\title{CSC110 Project Proposal: Relationship between Climate Change, Pollution, and Productivity of a Nation}
+\author{Jason Sastra}
+\date{Friday, November 6, 2020}
+
+\begin{document}
+\maketitle
+
+\section*{Problem Description and Research Question}
+
+In today's age of global warming, it is widely believed that one of the factors that heavily affect global warming is pollution, specifically carbon dioxide emission. In my project, what I want to do is to explore the relationship between carbon emission, climate change, and productivity of a nation. I would like to take in multiple data sets including the GDP of a nation, the reliance of a country on automobiles, the amount of CO2 emission, the amount of automobiles, along with the change in climate change in order to compute predictions of climate change through changes in pollution and productivity. I would do this by finding the relationships between these different data sets and compute another graph which are predicted from the appropriate graph from these data sets. My final goal would be comparing recent data sets, such as those within 2000-2010, and comparing it to real life scenarios. I would like to create a linear regression and predict the change in global warming based on CO2 commission and country GDP and see if it holds true. I will do this on plot.ly, allowing me to create graphs of the predicted increase in average temperature based on average increase in CO2. I would like to know is whether or not the weather of the country shows how hard it is affected by climate change. Does climate change hurt ares with higher temperature or lower temperature? I would show the intensity of the effect of climate change based on regions using a pygame visual, showing the change in average temperature compared with the change of CO2. The pygame visual will show how drastic the change in average temperature is relative to the change of CO2 and the original temperature.
+
+\section*{Dataset Description}
+
+Data set of CO2 emission from UN in Kilotonne CO2 \\
+"Country or Area","Year","Value" \\
+"Australia","2017","417041.277910766" \\
+"Australia","2016","413157.391667875"\\
+"Australia","2015","402537.564873241"\\
+"Australia","2014","393288.531798422"\\
+"Australia","2013","398051.591105236"\\
+"Australia","2012","406986.984923997"\\
+"Australia","2011","404263.695076992"\\
+"Australia","2010","406425.942052995"\\
+"Australia","2009","408344.934977177"\\
+"Australia","2008","405048.53717719"\\
+"Australia","2007","400415.409416881"\\
+"Australia","2006","392681.873174982"\\
+"Australia","2005","386514.916662142"\\
+"Australia","2004","383204.650915682"\\
+"Australia","2003","369725.552790947"\\
+"Australia","2002","362209.093829325"\\
+"Australia","2001","357668.742790314"\\
+"Australia","2000","350194.581777693"\\
+"Austria","2017","69978.846913737"\\
+"Austria","2016","67314.8784011061"\\
+"Austria","2015","66732.8619529379"\\
+"Austria","2014","64467.3682319862"\\
+"Austria","2013","68161.1797721496"\\
+"Austria","2012","67577.1339873951"\\
+"Austria","2011","70142.5597188225"\\
+"Austria","2010","72228.2930742589"\\
+
+This dataset simply shows the CO2 emission of countries and its year. It is a simple csv file that is seperated by commas. \\ 
+2013-05-01,17.565,0.335,Azerbaijan \\
+2013-06-01,21.862,0.391,Azerbaijan \\
+2013-07-01,24.221,0.415,Azerbaijan \\
+2013-08-01,23.239,0.306,Azerbaijan \\
+2013-09-01,,,Azerbaijan \\
+1758-03-01,22.215999999999998,3.008,Bahamas \\
+1758-04-01,23.230999999999998,4.993,Bahamas \\
+1758-05-01,24.326,3.385,Bahamas \\
+1758-06-01,27.201999999999998,3.253,Bahamas \\
+1758-07-01,27.752,4.677,Bahamas \\
+
+This data set contains the year and month, average temperature, the 95 confidence interval around average temperature, and the country itself. I will use this data set to measure the change in average temperature with respect to CO2 emission and nearby country's CO2 emission. This data set is provided by the Berkeley Earth
+\section*{Computational Plan}
+
+The first thing I would do is filter out all the years that are below 2000 for the data set of global warming. I will filter it by using a doing a comprehension with if. By doing so, I would be able to make the data set way smaller than previously. Next I would find the average of the months in the global warming data sets so that I could match the fact that the data in the pollution data set is simply by year. Through this, I would find the correlation between the two values and make a linear regression of the expected change in average temperature with respect to the change in CO2.I would do this individually per country first then I would find the overall average in order to find the increase in the average temperature of the world in respect to the change in CO2 emission. One way in which I would compare this is to first divide the CO2 emission with the size of the country so that CO2 emissions are not inflated for larger countries. After finding the change of average temperature for every country, I would compare it to the global average change of temperature and see whether or not original temperature is a factor in the intensity of climate change. After calculating this all, I would create a py.game visual which will show the intensity of climate change in each region. Clicking on the country would lead to a plot.ly visual of the average rate of change for CO2 and average temperature along with predictions of how high global warming will be if it continues on that trend. Finally, I would then graph the required amount of CO2 emission decreased in order to reach the original average temperature and also show it in the py.game
+
+\section*{References}
+
+http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aCO2
+\\
+https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data \\
+https://www.kaggle.com/econdata/climate-change?select=climate\_change.csv
+
+
+% NOTE: LaTeX does have a built-in way of generating references automatically,
+% but it's a bit tricky to use so we STRONGLY recommend writing your references
+% manually, using a standard academic format like APA or MLA.
+% (E.g., https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html)
+
+\end{document}
